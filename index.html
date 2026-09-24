@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marc-Henri Ngandu — Actor &amp; Producer</title>
+  <meta name="description" content="Official portfolio of Marc-Henri Ngandu, actor and producer. Based in Paris &amp; London. The Agency (Paramount+), La Pierre Percée, Jacques, Tape, L'esprit de l'escalier.">
+  
+  <link rel="icon" type="image/jpeg" href="assets/images/portrait-01.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+  <!-- ====================================================================
+       1. NAVIGATION HEADER (Fixe, épurée, cinématique)
+       ==================================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="site-title">marc-henri ngandu</a>
+      
+      <nav class="header-nav">
+        <a href="#portraits" class="nav-link" data-i18n="nav_portraits">portraits</a>
+        <a href="#filmography" class="nav-link" data-i18n="nav_filmography">filmographie</a>
+        <a href="#showreel" class="nav-link" data-i18n="nav_showreel">showreel</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">contact</a>
+        
+        <!-- Sélecteur de langue FR / EN Desktop -->
+        <div class="lang-switcher" aria-label="Choix de la langue">
+          <button type="button" class="lang-btn is-active" id="langFr" aria-label="Passer en Français">FR</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" id="langEn" aria-label="Switch to English">EN</button>
+        </div>
+
+        <!-- Bouton Burger Mobile -->
+        <button type="button" class="burger-menu-btn" id="burgerBtn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Menu Plein Écran Mobile (Fond noir texturé centré) -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
+      <div class="mobile-nav-content">
+        <a href="#portraits" class="mobile-nav-link" data-i18n="nav_portraits">portraits</a>
+        <a href="#filmography" class="mobile-nav-link" data-i18n="nav_filmography">filmographie</a>
+        <a href="#showreel" class="mobile-nav-link" data-i18n="nav_showreel">showreel</a>
+        <a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">contact</a>
+
+        <div class="mobile-lang-box" aria-label="Choix de la langue mobile">
+          <button type="button" class="mobile-lang-btn is-active" id="mobileLangFr">FR</button>
+          <span style="color: rgba(255, 255, 255, 0.3);">/</span>
+          <button type="button" class="mobile-lang-btn" id="mobileLangEn">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ====================================================================
+         1. SECTION HERO / PORTRAIT & BIO (Split-Screen 2 colonnes Desktop)
+         ==================================================================== -->
+    <section class="hero-split-section" id="bio">
+      
+      <!-- Colonne gauche : Photo portrait principale 01 -->
+      <div class="hero-portrait-col">
+        <div class="hero-portrait-frame" id="heroMainPortrait" role="button" tabindex="0" aria-label="Agrandir le portrait en plein écran" data-full="assets/images/portrait-01.jpg">
+          <img src="assets/images/portrait-01.jpg" alt="Marc-Henri Ngandu — Actor &amp; Producer">
+          <span class="hero-portrait-hint" data-i18n="hint_zoom">agrandir ↗</span>
+        </div>
+      </div>
+
+      <!-- Colonne droite : Titre, sous-titre & Biographie officielle -->
+      <div class="hero-bio-col">
+        <div class="hero-header-block">
+          <h1 class="hero-main-title">Marc-Henri Ngandu</h1>
+          <div class="hero-subtitle" id="heroSubtitle" data-i18n="hero_roles">Comédien &amp; Producteur</div>
+        </div>
+
+        <div class="hero-bio-text" id="bioTextBlock">
+          <p>Né à Lyon, Marc-Henri Ngandu découvre très tôt le jeu d’acteur. Il fait ses premières armes et affine son jeu au Théâtre de l’Iris à Villeurbanne, développant un attachement profond pour l’incarnation dramatique.</p>
+          <p>À 22 ans, il s’installe à Londres. Avide d’explorer de nouveaux horizons, il parcourt le monde en tant que photographe, un parcours visuel et humain qui aiguise durablement son regard sur l’authenticité et l’émotion humaine.</p>
+          <p>Enrichi par ces expériences et passionné par le cinéma, il porte son travail à l’écran dans <em>La Pierre Percée</em> de Guillaume Plas aux côtés de Nemo Schiffman et Marilyne Canto. Il élargit rapidement son champ d'action sur les plateaux internationaux en rejoignant la saison 2 de la série Paramount+ <em>The Agency</em>.</p>
+          <p>De retour en France, il s'établit à Paris pour perfectionner son travail d'acteur à <a href="https://lafabrikorigin.com/" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">LafabriKorigin</a> sous la direction de Leslie Tompson-Bader.</p>
+          <p>Aujourd'hui à la fois comédien et producteur, il cofonde la société de production Décine Lario avec l’acteur Erik Alens. Alliant une sensibilité visuelle affûtée à un engagement total du jeu d’acteur, Marc-Henri Ngandu défend une vision artistique singulière, devant comme derrière la caméra.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         2. SECTION GALERIE PORTRAITS (Carrousel / Slider horizontal interactif)
+         ==================================================================== -->
+    <section class="section-container" id="portraits">
+      
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="section_portraits">portraits</h2>
+      </div>
+
+      <div class="gallery-carousel-wrapper">
+        <div class="carousel-viewport" id="carouselViewport" tabindex="0" role="region" aria-label="Carrousel de photos">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Photo 02 -->
+            <div class="carousel-card" data-full="assets/images/portrait-02.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 02">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-02.jpg" alt="Marc-Henri Ngandu — Portrait 02" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 03 -->
+            <div class="carousel-card" data-full="assets/images/portrait-03.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 03">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-03.jpg" alt="Marc-Henri Ngandu — Portrait 03" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 04 -->
+            <div class="carousel-card" data-full="assets/images/portrait-04.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 04">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-04.jpg" alt="Marc-Henri Ngandu — Portrait 04" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 05 -->
+            <div class="carousel-card" data-full="assets/images/portrait-05.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 05">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-05.jpg" alt="Marc-Henri Ngandu — Portrait 05" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 06 -->
+            <div class="carousel-card" data-full="assets/images/portrait-06.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 06">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-06.jpg" alt="Marc-Henri Ngandu — Portrait 06" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 07 -->
+            <div class="carousel-card" data-full="assets/images/portrait-07.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 07">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-07.jpg" alt="Marc-Henri Ngandu — Portrait 07" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 08 -->
+            <div class="carousel-card" data-full="assets/images/portrait-08.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 08">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-08.jpg" alt="Marc-Henri Ngandu — Portrait 08" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 09 -->
+            <div class="carousel-card" data-full="assets/images/portrait-09.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 09">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-09.jpg" alt="Marc-Henri Ngandu — Portrait 09" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 10 -->
+            <div class="carousel-card" data-full="assets/images/portrait-10.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 10">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-10.jpg" alt="Marc-Henri Ngandu — Portrait 10" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 11 -->
+            <div class="carousel-card" data-full="assets/images/portrait-11.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 11">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-11.jpg" alt="Marc-Henri Ngandu — Portrait 11" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 12 -->
+            <div class="carousel-card" data-full="assets/images/portrait-12.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 12">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-12.jpg" alt="Marc-Henri Ngandu — Portrait 12" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 13 -->
+            <div class="carousel-card" data-full="assets/images/portrait-13.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 13">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-13.jpg" alt="Marc-Henri Ngandu — Portrait 13" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 14 -->
+            <div class="carousel-card" data-full="assets/images/portrait-14.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 14">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-14.jpg" alt="Marc-Henri Ngandu — Portrait 14" loading="lazy">
+              </div>
+            </div>
+            <!-- Photo 15 -->
+            <div class="carousel-card" data-full="assets/images/portrait-15.jpg" role="button" tabindex="0" aria-label="Agrandir le portrait 15">
+              <div class="carousel-card-img-box">
+                <img src="assets/images/portrait-15.jpg" alt="Marc-Henri Ngandu — Portrait 15" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contrôles du Carrousel : Flèches discrètes -->
+        <div class="carousel-controls-bar">
+          <div class="carousel-buttons">
+            <button type="button" class="carousel-btn" id="carouselPrevBtn" aria-label="Photo précédente">←</button>
+            <button type="button" class="carousel-btn" id="carouselNextBtn" aria-label="Photo suivante">→</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         3. SECTION PROJETS / FILMOGRAPHIE (Released / In Production)
+         ==================================================================== -->
+    <section class="section-container" id="filmography">
+      
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="section_filmography">filmographie</h2>
+        <span class="section-subtitle" data-i18n="subtitle_filmography">projets cinéma &amp; séries</span>
+      </div>
+
+      <div class="filmography-subsections">
+
+        <!-- 3.A PROJETS SORTIS (RELEASED) -->
+        <div class="film-subsection">
+          <div class="film-subsection-header">
+            <h3 class="film-subsection-title" data-i18n="group_released">projets sortis</h3>
+            <span class="film-subsection-badge">released</span>
+          </div>
+
+          <div class="projects-grid">
+            
+            <!-- Projet 1 : The Agency -->
+            <article class="project-card" 
+                     data-id="the-agency"
+                     data-full="assets/images/the-agency.jpg"
+                     role="button"
+                     tabindex="0"
+                     aria-label="Ouvrir les détails de The Agency">
+              <div class="project-poster-wrap">
+                <img src="assets/images/the-agency.jpg" alt="The Agency — Paramount+" loading="lazy">
+                <div class="project-card-overlay">
+                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                </div>
+              </div>
+              <div class="project-card-info">
+                <h4 class="project-card-title">the agency</h4>
+                <div class="project-card-meta" data-i18n="agency_meta">série tv • paramount+ (2024)</div>
+              </div>
+            </article>
+
+            <!-- Projet 2 : La Pierre Percée -->
+            <article class="project-card" 
+                     data-id="la-pierre-percee"
+                     data-full="assets/images/la-pierre-percee.jpg"
+                     role="button"
+                     tabindex="0"
+                     aria-label="Ouvrir les détails de La Pierre Percée">
+              <div class="project-poster-wrap">
+                <img src="assets/images/la-pierre-percee.jpg" alt="La Pierre Percée — Guillaume Plas" loading="lazy">
+                <div class="project-card-overlay">
+                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                </div>
+              </div>
+              <div class="project-card-info">
+                <h4 class="project-card-title">la pierre percée</h4>
+                <div class="project-card-meta" data-i18n="pierre_meta">court-métrage • drame (2022)</div>
+              </div>
+            </article>
+
+            <!-- Projet 3 : Jacques -->
+            <article class="project-card" 
+                     data-id="jacques"
+                     data-full="assets/images/jacques.jpg"
+                     role="button"
+                     tabindex="0"
+                     aria-label="Ouvrir les détails de Jacques">
+              <div class="project-poster-wrap">
+                <img src="assets/images/jacques.jpg" alt="Jacques — Guillaume Plas" loading="lazy">
+                <div class="project-card-overlay">
+                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                </div>
+              </div>
+              <div class="project-card-info">
+                <h4 class="project-card-title">jacques</h4>
+                <div class="project-card-meta" data-i18n="jacques_meta">court-métrage • comédie dramatique (2024)</div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- 3.B PROJETS EN PRODUCTION (IN PRODUCTION / À VENIR) -->
+        <div class="film-subsection">
+          <div class="film-subsection-header">
+            <h3 class="film-subsection-title" data-i18n="group_in_prod">en production / à venir</h3>
+            <span class="film-subsection-badge badge-in-prod">in production</span>
+          </div>
+
+          <div class="projects-grid">
+
+            <!-- Projet 4 : Tape -->
+            <article class="project-card" 
+                     data-id="tape"
+                     data-full="assets/images/tape.jpg"
+                     role="button"
+                     tabindex="0"
+                     aria-label="Ouvrir les détails de Tape">
+              <div class="project-poster-wrap">
+                <img src="assets/images/tape.jpg" alt="Tape — Oskar Nilsson" loading="lazy">
+                <div class="project-card-overlay">
+                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                </div>
+              </div>
+              <div class="project-card-info">
+                <h4 class="project-card-title">tape</h4>
+                <div class="project-card-meta" data-i18n="tape_meta">court-métrage • drame (2025)</div>
+              </div>
+            </article>
+
+            <!-- Projet 5 : L'esprit de l'escalier -->
+            <article class="project-card" 
+                     data-id="esprit-escalier"
+                     data-full="assets/images/affiche-esprit-de-escalier.jpg"
+                     role="button"
+                     tabindex="0"
+                     aria-label="Ouvrir les détails de L'esprit de l'escalier">
+              <div class="project-poster-wrap">
+                <img src="assets/images/affiche-esprit-de-escalier.jpg" alt="L'esprit de l'escalier — Ulysse Josselin" loading="lazy">
+                <div class="project-card-overlay">
+                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                </div>
+              </div>
+              <div class="project-card-info">
+                <h4 class="project-card-title">l'esprit de l'escalier</h4>
+                <div class="project-card-meta" data-i18n="esprit_meta">court-métrage • drame (en production)</div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         4. SECTION SHOWREEL / BANDE DÉMO (Lecteur vidéo 16:9 responsive)
+         ==================================================================== -->
+    <section class="section-container" id="showreel">
+      
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="section_showreel">showreel / bande démo</h2>
+      </div>
+
+      <div class="showreel-container">
+        <div class="showreel-frame">
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/iYLkJ9MBk0Y?controls=1&modestbranding=1&rel=0" 
+            title="Marc-Henri Ngandu — Showreel / Bande Démo" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="showreel-caption">
+          <span data-i18n="showreel_sub">bande démo officielle — marc-henri ngandu</span>
+          <a href="https://www.youtube.com/watch?v=iYLkJ9MBk0Y" target="_blank" rel="noopener" data-i18n="view_youtube">voir sur youtube ↗</a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       5. PIED DE PAGE / CONTACT (Footer Contrasté & Minimaliste)
+       ==================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner-centered">
+      
+      <div class="footer-contact-title" data-i18n="footer_contact">contact &amp; booking</div>
+      
+      <a href="mailto:crocoandco1@gmail.com" class="footer-email-link">crocoandco1@gmail.com</a>
+      
+      <div class="footer-social-links">
+        <a href="https://www.imdb.com/fr/name/nm13514283/" target="_blank" rel="noopener" class="footer-social-link">imdb ↗</a>
+        <a href="https://www.instagram.com/marckenrii" target="_blank" rel="noopener" class="footer-social-link">instagram ↗</a>
+        <a href="assets/cv-marc-henri-ngandu-fr.pdf" target="_blank" rel="noopener" class="footer-social-link" id="footerCvLink" data-i18n="footer_cv">cv ↗</a>
+        <a href="https://decinelario.com" target="_blank" rel="noopener" class="footer-social-link">décine lario ↗</a>
+      </div>
+
+      <div class="footer-copyright">
+        © Marc-Henri Ngandu. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       MODAL / DRAWER LATÉRAL DE PROJET (Détails complets au clic)
+       ==================================================================== -->
+  <div class="project-drawer-overlay" id="projectDrawerOverlay" aria-hidden="true">
+    <aside class="project-drawer" id="projectDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      
+      <div class="drawer-header">
+        <span class="drawer-status-tag" id="drawerBadge">released</span>
+        <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Fermer le volet">
+          <span>✕</span>
+          <span data-i18n="close_btn">fermer</span>
+        </button>
+      </div>
+
+      <div class="drawer-content">
+        <div class="drawer-poster-frame">
+          <img src="" alt="" id="drawerImg">
+        </div>
+
+        <div>
+          <h3 class="drawer-title" id="drawerTitle">the agency</h3>
+        </div>
+
+        <div class="drawer-details-list">
+          <div class="drawer-detail-item">
+            <span class="drawer-detail-label" data-i18n="label_role">rôle / personnage</span>
+            <span class="drawer-detail-value" id="drawerRole"></span>
+          </div>
+
+          <div class="drawer-detail-item">
+            <span class="drawer-detail-label" data-i18n="label_format">format &amp; genre</span>
+            <span class="drawer-detail-value" id="drawerFormat"></span>
+          </div>
+
+          <div class="drawer-detail-item">
+            <span class="drawer-detail-label" data-i18n="label_director">réalisation &amp; prod.</span>
+            <span class="drawer-detail-value" id="drawerDirector"></span>
+          </div>
+
+          <div class="drawer-detail-item">
+            <span class="drawer-detail-label" data-i18n="label_cast">distribution</span>
+            <span class="drawer-detail-value" id="drawerCast"></span>
+          </div>
+
+          <div class="drawer-detail-item">
+            <span class="drawer-detail-label" data-i18n="label_status">statut / sortie</span>
+            <span class="drawer-detail-value" id="drawerStatus"></span>
+          </div>
+        </div>
+
+        <div class="drawer-synopsis-section">
+          <div class="drawer-synopsis-label" data-i18n="label_synopsis">synopsis &amp; note</div>
+          <p class="drawer-synopsis-text" id="drawerSynopsis"></p>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- ====================================================================
+       PHOTO LIGHTBOX MODAL (Plein écran épuré avec croix de fermeture et navigation carrousel)
+       ==================================================================== -->
+  <div class="photo-lightbox-modal" id="photoLightboxModal" aria-hidden="true">
+    <button type="button" class="photo-lightbox-close-btn" id="closePhotoLightboxBtn" aria-label="Fermer la photo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <!-- Boutons Flèches Précédent / Suivant (affichés uniquement pour le carrousel) -->
+    <button type="button" class="photo-lightbox-nav-btn photo-lightbox-prev-btn" id="lightboxPrevBtn" aria-label="Photo précédente">←</button>
+    <button type="button" class="photo-lightbox-nav-btn photo-lightbox-next-btn" id="lightboxNextBtn" aria-label="Photo suivante">→</button>
+
+    <div class="photo-lightbox-content" id="photoLightboxContent">
+      <img src="" alt="Marc-Henri Ngandu" class="photo-lightbox-img" id="photoLightboxImg">
+    </div>
+  </div>
+
+  <!-- Interaction Scripts & Multilingue (FR / EN) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      // ----------------------------------------------------
+      // ÉLÉMENTS DU DOM
+      // ----------------------------------------------------
+      const drawerOverlay = document.getElementById("projectDrawerOverlay");
+      const drawerCloseBtn = document.getElementById("drawerCloseBtn");
+      const drawerImg = document.getElementById("drawerImg");
+      const drawerTitle = document.getElementById("drawerTitle");
+      const drawerRole = document.getElementById("drawerRole");
+      const drawerFormat = document.getElementById("drawerFormat");
+      const drawerDirector = document.getElementById("drawerDirector");
+      const drawerCast = document.getElementById("drawerCast");
+      const drawerStatus = document.getElementById("drawerStatus");
+      const drawerBadge = document.getElementById("drawerBadge");
+      const drawerSynopsis = document.getElementById("drawerSynopsis");
+
+      const photoLightboxModal = document.getElementById("photoLightboxModal");
+      const photoLightboxImg = document.getElementById("photoLightboxImg");
+      const closePhotoLightboxBtn = document.getElementById("closePhotoLightboxBtn");
+
+      let activeProjectId = null;
+
+      // ----------------------------------------------------
+      // DONNÉES BILINGUES (FR / EN)
+      // ----------------------------------------------------
+      const TRANSLATIONS = {
+        fr: {
+          hero_roles: "Comédien & Producteur",
+          nav_portraits: "portraits",
+          nav_filmography: "filmographie",
+          nav_showreel: "showreel",
+          nav_contact: "contact",
+          hint_zoom: "agrandir ↗",
+          section_portraits: "portraits",
+          section_filmography: "filmographie",
+          subtitle_filmography: "projets cinéma & séries",
+          group_released: "projets sortis",
+          group_in_prod: "en production / à venir",
+          view_project: "détails du projet ↗",
+          section_showreel: "showreel / bande démo",
+          showreel_sub: "bande démo officielle — marc-henri ngandu",
+          view_youtube: "voir sur youtube ↗",
+          footer_contact: "contact & booking",
+          footer_cv: "cv ↗",
+          cv_href: "assets/cv-marc-henri-ngandu-fr.pdf",
+          close_btn: "fermer",
+          label_role: "rôle / personnage",
+          label_format: "format & genre",
+          label_director: "réalisation & prod.",
+          label_cast: "distribution",
+          label_status: "statut / sortie",
+          label_synopsis: "synopsis & note",
+          agency_meta: "série tv • paramount+ (2024)",
+          pierre_meta: "court-métrage • drame (2022)",
+          jacques_meta: "court-métrage • comédie dramatique (2024)",
+          tape_meta: "court-métrage • drame (2025)",
+          esprit_meta: "court-métrage • drame (en production)",
+          bio_paragraphs: [
+            "Né à Lyon, Marc-Henri Ngandu découvre très tôt le jeu d’acteur. Il fait ses premières armes et affine son jeu au Théâtre de l’Iris à Villeurbanne, développant un attachement profond pour l’incarnation dramatique.",
+            "À 22 ans, il s’installe à Londres. Avide d’explorer de nouveaux horizons, il parcourt le monde en tant que photographe, un parcours visuel et humain qui aiguise durablement son regard sur l’authenticité et l’émotion humaine.",
+            "Enrichi par ces expériences et passionné par le cinéma, il porte son travail à l’écran dans <em>La Pierre Percée</em> de Guillaume Plas aux côtés de Nemo Schiffman et Marilyne Canto. Il élargit rapidement son champ d'action sur les plateaux internationaux en rejoignant la saison 2 de la série Paramount+ <em>The Agency</em>.",
+            "De retour en France, il s'établit à Paris pour perfectionner son travail d'acteur à <a href='https://lafabrikorigin.com/' target='_blank' rel='noopener' style='text-decoration: underline; text-underline-offset: 3px;'>LafabriKorigin</a> sous la direction de Leslie Tompson-Bader.",
+            "Aujourd'hui à la fois comédien et producteur, il cofonde la société de production Décine Lario avec l’acteur Erik Alens. Alliant une sensibilité visuelle affûtée à un engagement total du jeu d’acteur, Marc-Henri Ngandu défend une vision artistique singulière, devant comme derrière la caméra."
+          ]
+        },
+        en: {
+          hero_roles: "Actor & Producer",
+          nav_portraits: "portraits",
+          nav_filmography: "filmography",
+          nav_showreel: "showreel",
+          nav_contact: "contact",
+          hint_zoom: "expand ↗",
+          section_portraits: "portraits",
+          section_filmography: "filmography",
+          subtitle_filmography: "film & television projects",
+          group_released: "released projects",
+          group_in_prod: "in production / upcoming",
+          view_project: "project details ↗",
+          section_showreel: "showreel / demo reel",
+          showreel_sub: "official demo reel — marc-henri ngandu",
+          view_youtube: "watch on youtube ↗",
+          footer_contact: "contact & booking",
+          footer_cv: "resume ↗",
+          cv_href: "assets/resume-marc-henri-ngandu-en.pdf",
+          close_btn: "close",
+          label_role: "role / character",
+          label_format: "format & genre",
+          label_director: "director & prod.",
+          label_cast: "cast",
+          label_status: "status / release",
+          label_synopsis: "synopsis & director's note",
+          agency_meta: "tv series • paramount+ (2024)",
+          pierre_meta: "short film • drama (2022)",
+          jacques_meta: "short film • dramatic comedy (2024)",
+          tape_meta: "short film • drama (2025)",
+          esprit_meta: "short film • drama (in production)",
+          bio_paragraphs: [
+            "Born in Lyon, France, Marc-Henri Ngandu discovered the performing arts at an early age. He took his first steps and refined his craft at the Théâtre de l’Iris in Villeurbanne, developing a deep devotion to dramatic storytelling and performance.",
+            "At the age of 22, he moved to London. Eager to explore new perspectives, he traveled the world working as a photographer, a visual and human journey that permanently sharpened his eye for authenticity and human emotion.",
+            "Enriched by these experiences and fueled by a passion for cinema, he brought his craft to the screen in Guillaume Plas’s <em>La Pierre Percée</em>, starring alongside Nemo Schiffman and Marilyne Canto. He quickly expanded his reach to international sets by joining Season 2 of the Paramount+ series <em>The Agency</em>.",
+            "Upon returning to France, he based himself in Paris to further hone his acting at <a href='https://lafabrikorigin.com/' target='_blank' rel='noopener' style='text-decoration: underline; text-underline-offset: 3px;'>LafabriKorigin</a> under the mentorship of Leslie Tompson-Bader.",
+            "Now both an actor and producer, he co-founded the production company Décine Lario with fellow actor Erik Alens. Blending his keen visual sensibility with dedicated screen craft, Marc-Henri Ngandu champions a distinct artistic vision, both in front of and behind the camera."
+          ]
+        }
+      };
+
+      // DONNÉES DES PROJETS
+      const PROJECTS_DATA = {
+        "the-agency": {
+          fr: {
+            title: "The Agency",
+            role: "AU Soldier (2 épisodes)",
+            format: "Série TV (Saison 2) • Drame, Thriller, Espionnage",
+            director: "Paramount+ / Showtime • George Clooney & Grant Heslov",
+            cast: "Michael Fassbender, Richard Gere, Jeffrey Wright, Jodie Turner-Smith, Marc-Henri Ngandu",
+            status: "Sorti en 2024",
+            badge: "Released",
+            synopsis: "Suivez un monde d'intrigues et de subterfuges encore plus profonds, avec des personnages qui mènent leurs propres batailles tout en luttant contre des menaces existentielles pour la nation et le monde."
+          },
+          en: {
+            title: "The Agency",
+            role: "AU Soldier (2 episodes)",
+            format: "TV Series (Season 2) • Drama, Thriller, Espionage",
+            director: "Paramount+ / Showtime • George Clooney & Grant Heslov",
+            cast: "Michael Fassbender, Richard Gere, Jeffrey Wright, Jodie Turner-Smith, Marc-Henri Ngandu",
+            status: "Released in 2024",
+            badge: "Released",
+            synopsis: "Follow a deeper world of intrigue and subterfuge, where characters fight their own battles while confronting existential threats to the nation and the world."
+          }
+        },
+        "la-pierre-percee": {
+          fr: {
+            title: "La Pierre Percée",
+            role: "Joseph (rôle principal)",
+            format: "Court-métrage (24 min) • Drame",
+            director: "Réal. Guillaume Plas • Sourire Productions",
+            cast: "Nemo Schiffman, Marilyne Canto, Marc-Henri Ngandu",
+            status: "Sorti en 2022",
+            badge: "Released",
+            synopsis: "Après une année passée à Paris, Slim, ayant raté ses concours, se voit forcé de rentrer dans son petit village en Isère. Il y retrouve Joseph, son meilleur ami, qui a mal vécu le départ de ce dernier. Les retrouvailles sont difficiles. Sous la chaleur de l’été, entre les non-dits et les rêves déçus, la tension monte."
+          },
+          en: {
+            title: "La Pierre Percée",
+            role: "Joseph (Lead Role)",
+            format: "Short Film (24 min) • Drama",
+            director: "Dir. Guillaume Plas • Sourire Productions",
+            cast: "Nemo Schiffman, Marilyne Canto, Marc-Henri Ngandu",
+            status: "Released in 2022",
+            badge: "Released",
+            synopsis: "After a year in Paris and failing his entrance exams, Slim is forced to return to his small village in Isère. There he reunites with Joseph, his best friend, who took his departure poorly. Reunions prove difficult. In the summer heat, unspoken grievances and broken ambitions make tensions mount."
+          }
+        },
+        "jacques": {
+          fr: {
+            title: "Jacques",
+            role: "Paul",
+            format: "Court-métrage • Comédie dramatique",
+            director: "Réal. Guillaume Plas • Sourire Productions",
+            cast: "Marc-Henri Ngandu, Théo Augier, Abraham Wapler, Tasnim Jamlaoui, Margaux Lenot, Igor Kovalsky, Wanda Efremov, Guillaume Soubeyran",
+            status: "Sorti en 2024",
+            badge: "Released",
+            synopsis: "Une bande de jeunes se retrouve le temps d’un week-end pour avancer sur leurs projets respectifs dans le milieu du cinéma. Quand l’un d’entre eux reçoit une réponse positive d’une bourse pour développer son projet, l’équilibre déjà instable des relations va s’effondrer."
+          },
+          en: {
+            title: "Jacques",
+            role: "Paul",
+            format: "Short Film • Dramatic Comedy",
+            director: "Dir. Guillaume Plas • Sourire Productions",
+            cast: "Marc-Henri Ngandu, Théo Augier, Abraham Wapler, Tasnim Jamlaoui, Margaux Lenot, Igor Kovalsky, Wanda Efremov, Guillaume Soubeyran",
+            status: "Released in 2024",
+            badge: "Released",
+            synopsis: "A close circle of young filmmakers gathers for a weekend to work on their respective cinema projects. When one receives funding approval for his script, fragile balances collapse under underlying rivalry and ambition."
+          }
+        },
+        "tape": {
+          fr: {
+            title: "Tape",
+            role: "Sous Chef",
+            format: "Court-métrage • Drame",
+            director: "Réal. Oskar Nilsson • Path 22 & ill Advised / Décine Lario",
+            cast: "Marc-Henri Ngandu, Steve Tagheu, Ilyana Djamila Nzokou",
+            status: "En production (2025)",
+            badge: "In Production",
+            synopsis: "Un père célibataire qui se prépare à défendre son titre de champion du monde de kick-boxing va tout risquer pour une audition qui pourrait changer sa vie."
+          },
+          en: {
+            title: "Tape",
+            role: "Sous Chef",
+            format: "Short Film • Drama",
+            director: "Dir. Oskar Nilsson • Path 22 & ill Advised / Décine Lario",
+            cast: "Marc-Henri Ngandu, Steve Tagheu, Ilyana Djamila Nzokou",
+            status: "In Production (2025)",
+            badge: "In Production",
+            synopsis: "A single father preparing to defend his world kick-boxing champion title risks everything for a life-altering casting audition."
+          }
+        },
+        "esprit-escalier": {
+          fr: {
+            title: "L'esprit de l'escalier",
+            role: "Oscar",
+            format: "Court-métrage • Drame",
+            director: "Réal. Ulysse Josselin",
+            cast: "Marc-Henri Ngandu, Margaux Lenot, Galice Cassagnes, Alix Gavoille",
+            status: "En production",
+            badge: "In Production",
+            synopsis: "Le temps d'une nuit, dans un vaste appartement parisien, une bande de potes issus d'un milieu privilégié se retrouve pour une soirée où tout semble permis : ironie, provocations, faux débats politiques et règlements de comptes."
+          },
+          en: {
+            title: "L'esprit de l'escalier",
+            role: "Oscar",
+            format: "Short Film • Drama",
+            director: "Dir. Ulysse Josselin",
+            cast: "Marc-Henri Ngandu, Margaux Lenot, Galice Cassagnes, Alix Gavoille",
+            status: "In Production",
+            badge: "In Production",
+            synopsis: "Over the course of a night in a sprawling Parisian apartment, a circle of friends from privileged backgrounds gather for an evening where everything seems permitted: irony, provocations, mock political debates, and settling scores."
+          }
+        }
+      };
+
+      let currentLang = "fr";
+
+      function populateDrawer(projId) {
+        const dataGroup = PROJECTS_DATA[projId];
+        if (!dataGroup) return;
+        const data = dataGroup[currentLang] || dataGroup.fr;
+
+        if (drawerTitle) drawerTitle.textContent = data.title;
+        if (drawerRole) drawerRole.textContent = data.role;
+        if (drawerFormat) drawerFormat.textContent = data.format;
+        if (drawerDirector) drawerDirector.textContent = data.director;
+        if (drawerCast) drawerCast.textContent = data.cast;
+        if (drawerStatus) drawerStatus.textContent = data.status;
+        if (drawerBadge) drawerBadge.textContent = data.badge;
+        if (drawerSynopsis) drawerSynopsis.textContent = data.synopsis;
+      }
+
+      function setLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+
+        const btnFr = document.getElementById("langFr");
+        const btnEn = document.getElementById("langEn");
+        const mBtnFr = document.getElementById("mobileLangFr");
+        const mBtnEn = document.getElementById("mobileLangEn");
+        if (btnFr && btnEn) {
+          if (lang === "fr") {
+            btnFr.classList.add("is-active");
+            btnEn.classList.remove("is-active");
+            if (mBtnFr && mBtnEn) {
+              mBtnFr.classList.add("is-active");
+              mBtnEn.classList.remove("is-active");
+            }
+          } else {
+            btnEn.classList.add("is-active");
+            btnFr.classList.remove("is-active");
+            if (mBtnFr && mBtnEn) {
+              mBtnEn.classList.add("is-active");
+              mBtnFr.classList.remove("is-active");
+            }
+          }
+        }
+
+        const dict = TRANSLATIONS[lang];
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key]) {
+            el.textContent = dict[key];
+          }
+        });
+
+        const bioContainer = document.getElementById("bioTextBlock");
+        if (bioContainer && dict.bio_paragraphs) {
+          bioContainer.innerHTML = dict.bio_paragraphs.map(p => `<p>${p}</p>`).join("");
+        }
+
+        const cvLink = document.getElementById("footerCvLink");
+        if (cvLink && dict.cv_href) {
+          cvLink.setAttribute("href", dict.cv_href);
+        }
+
+        if (activeProjectId && drawerOverlay && drawerOverlay.classList.contains("is-active")) {
+          populateDrawer(activeProjectId);
+        }
+      }
+
+      const langFrBtn = document.getElementById("langFr");
+      const langEnBtn = document.getElementById("langEn");
+      if (langFrBtn) langFrBtn.addEventListener("click", () => setLanguage("fr"));
+      if (langEnBtn) langEnBtn.addEventListener("click", () => setLanguage("en"));
+
+      // Initialiser la langue par défaut (FR)
+      setLanguage("fr");
+
+
+      // ----------------------------------------------------
+      // BURGER MENU MOBILE
+      // ----------------------------------------------------
+      const burgerBtn = document.getElementById("burgerBtn");
+      const mobileNavOverlay = document.getElementById("mobileNavOverlay");
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+      const mobileLangFr = document.getElementById("mobileLangFr");
+      const mobileLangEn = document.getElementById("mobileLangEn");
+
+      function toggleBurgerMenu(forceClose = false) {
+        if (!burgerBtn || !mobileNavOverlay) return;
+        const isOpen = forceClose ? false : !mobileNavOverlay.classList.contains("is-active");
+
+        if (isOpen) {
+          burgerBtn.classList.add("is-active");
+          burgerBtn.setAttribute("aria-expanded", "true");
+          mobileNavOverlay.classList.add("is-active");
+          mobileNavOverlay.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        } else {
+          burgerBtn.classList.remove("is-active");
+          burgerBtn.setAttribute("aria-expanded", "false");
+          mobileNavOverlay.classList.remove("is-active");
+          mobileNavOverlay.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+        }
+      }
+
+      if (burgerBtn) {
+        burgerBtn.addEventListener("click", () => toggleBurgerMenu());
+      }
+
+      mobileNavLinks.forEach(link => {
+        link.addEventListener("click", () => toggleBurgerMenu(true));
+      });
+
+      if (mobileLangFr) {
+        mobileLangFr.addEventListener("click", () => {
+          setLanguage("fr");
+          toggleBurgerMenu(true);
+        });
+      }
+      if (mobileLangEn) {
+        mobileLangEn.addEventListener("click", () => {
+          setLanguage("en");
+          toggleBurgerMenu(true);
+        });
+      }
+
+      // ----------------------------------------------------
+      // 1. CARROUSEL HORIZONTAL PORTRAITS
+      // ----------------------------------------------------
+      const viewport = document.getElementById("carouselViewport");
+      const prevBtn = document.getElementById("carouselPrevBtn");
+      const nextBtn = document.getElementById("carouselNextBtn");
+      const track = document.getElementById("carouselTrack");
+      const slides = track ? track.querySelectorAll(".carousel-card") : [];
+
+      if (viewport) {
+        if (nextBtn) {
+          nextBtn.addEventListener("click", () => {
+            const step = (slides[0] ? slides[0].offsetWidth : 300) + 24;
+            viewport.scrollBy({ left: step, behavior: "smooth" });
+          });
+        }
+        if (prevBtn) {
+          prevBtn.addEventListener("click", () => {
+            const step = (slides[0] ? slides[0].offsetWidth : 300) + 24;
+            viewport.scrollBy({ left: -step, behavior: "smooth" });
+          });
+        }
+
+        // Glisser-déposer souris
+        let isDown = false;
+        let startX = 0;
+        let scrollStart = 0;
+
+        viewport.addEventListener("mousedown", (e) => {
+          isDown = true;
+          viewport.classList.add("is-dragging");
+          startX = e.pageX - viewport.offsetLeft;
+          scrollStart = viewport.scrollLeft;
+        });
+
+        window.addEventListener("mouseup", () => {
+          if (isDown) {
+            isDown = false;
+            viewport.classList.remove("is-dragging");
+          }
+        });
+
+        viewport.addEventListener("mousemove", (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - viewport.offsetLeft;
+          const walk = (x - startX) * 1.6;
+          viewport.scrollLeft = scrollStart - walk;
+        });
+      }
+
+      // ----------------------------------------------------
+      // 2. DRAWER / VOLET DE PROJET
+      // ----------------------------------------------------
+      function openDrawer(card) {
+        const projId = card.getAttribute("data-id");
+        const fullSrc = card.getAttribute("data-full");
+        activeProjectId = projId;
+
+        populateDrawer(projId);
+
+        if (drawerImg) {
+          drawerImg.src = fullSrc;
+          drawerImg.alt = drawerTitle ? drawerTitle.textContent : "";
+        }
+
+        if (drawerOverlay) {
+          drawerOverlay.classList.add("is-active");
+          drawerOverlay.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closeDrawer() {
+        if (drawerOverlay) {
+          drawerOverlay.classList.remove("is-active");
+          drawerOverlay.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+        }
+      }
+
+      const projectCards = document.querySelectorAll(".project-card");
+      projectCards.forEach(card => {
+        card.addEventListener("click", () => openDrawer(card));
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openDrawer(card);
+          }
+        });
+      });
+
+      if (drawerCloseBtn) drawerCloseBtn.addEventListener("click", closeDrawer);
+      if (drawerOverlay) {
+        drawerOverlay.addEventListener("click", (e) => {
+          if (e.target === drawerOverlay) closeDrawer();
+        });
+      }
+
+      // ----------------------------------------------------
+      // 3. PHOTO LIGHTBOX MODAL
+      // ----------------------------------------------------
+      const lightboxPrevBtn = document.getElementById("lightboxPrevBtn");
+      const lightboxNextBtn = document.getElementById("lightboxNextBtn");
+
+      // Uniquement les photos du carrousel de la section portraits
+      const carouselCards = Array.from(document.querySelectorAll(".carousel-card"));
+      const carouselSources = carouselCards.map(el => el.getAttribute("data-full")).filter(Boolean);
+      const heroPortraitFrame = document.getElementById("heroMainPortrait");
+      
+      let currentPhotoIndex = 0;
+      let isCarouselMode = false;
+
+      function updateLightboxImage(index) {
+        if (carouselSources.length === 0) return;
+        if (index < 0) index = carouselSources.length - 1;
+        if (index >= carouselSources.length) index = 0;
+
+        currentPhotoIndex = index;
+        photoLightboxImg.src = carouselSources[currentPhotoIndex];
+      }
+
+      function openPhotoLightbox(src, isCarousel = false) {
+        if (!src || !photoLightboxModal || !photoLightboxImg) return;
+        isCarouselMode = isCarousel;
+
+        if (isCarouselMode) {
+          const foundIdx = carouselSources.indexOf(src);
+          currentPhotoIndex = foundIdx !== -1 ? foundIdx : 0;
+          updateLightboxImage(currentPhotoIndex);
+          if (lightboxPrevBtn) lightboxPrevBtn.style.display = "flex";
+          if (lightboxNextBtn) lightboxNextBtn.style.display = "flex";
+        } else {
+          // Photo principale seule : pas de flèches
+          photoLightboxImg.src = src;
+          if (lightboxPrevBtn) lightboxPrevBtn.style.display = "none";
+          if (lightboxNextBtn) lightboxNextBtn.style.display = "none";
+        }
+
+        photoLightboxModal.classList.add("is-active");
+        photoLightboxModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closePhotoLightbox() {
+        if (!photoLightboxModal) return;
+        photoLightboxModal.classList.remove("is-active");
+        photoLightboxModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      function nextPhoto() {
+        if (!isCarouselMode) return;
+        updateLightboxImage(currentPhotoIndex + 1);
+      }
+
+      function prevPhoto() {
+        if (!isCarouselMode) return;
+        updateLightboxImage(currentPhotoIndex - 1);
+      }
+
+      if (closePhotoLightboxBtn) closePhotoLightboxBtn.addEventListener("click", closePhotoLightbox);
+      if (lightboxNextBtn) lightboxNextBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        nextPhoto();
+      });
+      if (lightboxPrevBtn) lightboxPrevBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        prevPhoto();
+      });
+
+      if (photoLightboxModal) {
+        photoLightboxModal.addEventListener("click", (e) => {
+          if (e.target === photoLightboxModal || e.target.id === "photoLightboxContent") {
+            closePhotoLightbox();
+          }
+        });
+      }
+
+      // Clic sur la photo principale à côté de la bio (sans flèches)
+      if (heroPortraitFrame) {
+        heroPortraitFrame.addEventListener("click", () => {
+          const src = heroPortraitFrame.getAttribute("data-full");
+          if (src) openPhotoLightbox(src, false);
+        });
+        heroPortraitFrame.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            const src = heroPortraitFrame.getAttribute("data-full");
+            if (src) openPhotoLightbox(src, false);
+          }
+        });
+      }
+
+      // Clic sur les photos du carrousel section portraits (avec flèches)
+      carouselCards.forEach(card => {
+        card.addEventListener("click", () => {
+          const src = card.getAttribute("data-full");
+          if (src) openPhotoLightbox(src, true);
+        });
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            const src = card.getAttribute("data-full");
+            if (src) openPhotoLightbox(src, true);
+          }
+        });
+      });
+
+      // ----------------------------------------------------
+      // 4. CLAVIER (ÉCHAP + FLÈCHES GAUCHE / DROITE)
+      // ----------------------------------------------------
+      document.addEventListener("keydown", (e) => {
+        if (photoLightboxModal && photoLightboxModal.classList.contains("is-active")) {
+          if (e.key === "Escape") {
+            if (mobileNavOverlay && mobileNavOverlay.classList.contains("is-active")) {
+              toggleBurgerMenu(true);
+            }
+            closePhotoLightbox();
+          } else if (e.key === "ArrowRight") {
+            nextPhoto();
+          } else if (e.key === "ArrowLeft") {
+            prevPhoto();
+          }
+        } else if (drawerOverlay && drawerOverlay.classList.contains("is-active")) {
+          if (e.key === "Escape") {
+            closeDrawer();
+          }
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Marc-Henri Ngandu (Comédien / Acteur)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --text-muted: #555555;
+      --text-light: #777777;
+      --border: #e2e2e0;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: #f4f3ef;
+      color: var(--text);
+      line-height: 1.5;
+      padding: 40px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .cv-sheet {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+    }
+
+    /* COLONNE GAUCHE (SIDEBAR) */
+    .cv-sidebar {
+      background-color: #faf9f6;
+      border-right: 1px solid var(--border);
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    .cv-photo-box {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      border-radius: 2px;
+      background: #eae9e5;
+    }
+
+    .cv-photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sidebar-section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar-heading {
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid #111111;
+    }
+
+    .sidebar-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .sidebar-text a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      transition: color 0.2s ease;
+    }
+
+    .sidebar-text a:hover {
+      color: #000;
+      border-color: #000;
+    }
+
+    /* COLONNE DROITE (CONTENU PRINCIPAL) */
+    .cv-main {
+      padding: 48px 44px;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    .cv-main-header {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .cv-name {
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .cv-intro {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .main-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .main-heading {
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+      padding-bottom: 8px;
+      border-bottom: 2px solid #111111;
+    }
+
+    /* TABLEAU DES PROJETS */
+    .projects-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .projects-table th {
+      text-align: left;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .projects-table td {
+      padding: 14px 0;
+      border-bottom: 1px solid #f0efeb;
+      vertical-align: top;
+    }
+
+    .projects-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .project-name {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+
+    .project-role {
+      font-weight: 500;
+      color: #222222;
+    }
+
+    .project-format {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* BOUTONS FLOTTANTS */
+    .floating-actions {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      display: flex;
+      gap: 12px;
+      z-index: 100;
+    }
+
+    .action-btn {
+      background: #111111;
+      color: #ffffff;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 0.86rem;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .action-btn:hover {
+      background: #333333;
+      transform: translateY(-2px);
+    }
+
+    .back-btn {
+      background: #ffffff;
+      color: #111111;
+      border: 1px solid #cccccc;
+    }
+
+    .back-btn:hover {
+      background: #f0f0f0;
+      color: #000000;
+    }
+
+    /* RESPONSIVE & IMPRESSION */
+    @media (max-width: 768px) {
+      body {
+        padding: 12px;
+      }
+      .cv-sheet {
+        grid-template-columns: 1fr;
+      }
+      .cv-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 32px 24px;
+      }
+      .cv-photo-box {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+      .cv-main {
+        padding: 32px 24px;
+      }
+      .projects-table th, .projects-table td {
+        font-size: 0.82rem;
+        padding: 10px 4px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .cv-sheet {
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+      .floating-actions {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-sheet">
+    
+    <!-- COLONNE GAUCHE -->
+    <aside class="cv-sidebar">
+      
+      <!-- PHOTO PORTRAIT DU CV -->
+      <div class="cv-photo-box">
+        <img src="images/portrait-01.jpg" alt="Marc-Henri Ngandu">
+      </div>
+
+      <!-- CONTACT -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-heading">Contact</h3>
+        <div class="sidebar-text">
+          <p>Paris &amp; Lyon, France</p>
+          <p style="margin-top: 6px;"><a href="mailto:crocoandco1@gmail.com">crocoandco1@gmail.com</a></p>
+          <p style="margin-top: 4px;"><a href="https://www.instagram.com/marckenrii" target="_blank" rel="noopener">Instagram : @marckenrii</a></p>
+          <p style="margin-top: 4px;"><a href="https://www.imdb.com/fr/name/nm13514283/" target="_blank" rel="noopener">IMDb : nm13514283</a></p>
+          <p style="margin-top: 4px;"><a href="https://decinelario.com" target="_blank" rel="noopener">Production : Décine Lario</a></p>
+        </div>
+      </div>
+
+      <!-- PROFIL -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-heading">Profil</h3>
+        <p class="sidebar-text">
+          Acteur à l’univers sobre et intense, à l’aise dans des projets de fiction, formats courts et productions audiovisuelles internationales. Sensibilité particulière pour les personnages réalistes, la tension dramatique et les univers cinématographiques.
+        </p>
+      </div>
+
+      <!-- LANGUES -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-heading">Langues</h3>
+        <div class="sidebar-text">
+          <p><strong>Français</strong> — Langue maternelle</p>
+          <p><strong>Anglais</strong> — Bilingue (courant / jeu d'acteur)</p>
+        </div>
+      </div>
+
+      <!-- FORMATION -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-heading">Formation</h3>
+        <div class="sidebar-text">
+          <p><strong><a href="https://lafabrikorigin.com/" target="_blank" rel="noopener">LafabriKorigin</a></strong></p>
+          <p style="font-size: 0.82rem; color: #777;">Mentorat de Leslie Tompson-Bader (Paris)</p>
+          <p style="margin-top: 8px;"><strong>Théâtre de l’Iris</strong></p>
+          <p style="font-size: 0.82rem; color: #777;">Arts de la scène &amp; jeu dramatique (Villeurbanne)</p>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- COLONNE DROITE -->
+    <main class="cv-main">
+      
+      <header class="cv-main-header">
+        <h1 class="cv-name">Marc-Henri Ngandu</h1>
+        <p class="cv-intro">
+          Comédien et producteur basé à Paris &amp; Londres, avec une expérience éprouvée sur des séries internationales, courts-métrages de fiction et projets audiovisuels. Profil orienté narration visuelle, avec une présence naturelle, sobre et une approche cinématographique du jeu.
+        </p>
+      </header>
+
+      <!-- SECTION PROJETS / FILMOGRAPHIE -->
+      <section class="main-section">
+        <h2 class="main-heading">Project / Filmographie</h2>
+        
+        <table class="projects-table">
+          <thead>
+            <tr>
+              <th style="width: 38%;">Projet</th>
+              <th style="width: 28%;">Rôle</th>
+              <th style="width: 34%;">Format &amp; Année</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="project-name">Tape</span></td>
+              <td><span class="project-role">Sous Chef</span></td>
+              <td><span class="project-format">Court-métrage • En tournage (2025)</span></td>
+            </tr>
+            <tr>
+              <td><span class="project-name">L'esprit de l'escalier</span></td>
+              <td><span class="project-role">Oscar</span></td>
+              <td><span class="project-format">Court-métrage • En production (2025)</span></td>
+            </tr>
+            <tr>
+              <td><span class="project-name">The Agency</span></td>
+              <td><span class="project-role">AU Soldier</span></td>
+              <td><span class="project-format">Série TV (2 épisodes) • Paramount+ (2024)</span></td>
+            </tr>
+            <tr>
+              <td><span class="project-name">Jacques</span></td>
+              <td><span class="project-role">Paul</span></td>
+              <td><span class="project-format">Court-métrage • 2024</span></td>
+            </tr>
+            <tr>
+              <td><span class="project-name">La Pierre Percée</span></td>
+              <td><span class="project-role">Joseph</span></td>
+              <td><span class="project-format">Court-métrage • 2022</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- APPRENTISSAGES & COMPÉTENCES COMPLÉMENTAIRES -->
+      <section class="main-section">
+        <h2 class="main-heading">Aptitudes &amp; Spécifications</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.88rem; color: var(--text-muted);">
+          <div>
+            <p style="font-weight: 700; color: #111; margin-bottom: 4px;">Jeu &amp; Mouvement</p>
+            <p>Jeu réaliste, présence physique engagée, combat scénique &amp; cascades, boxe, disponibilité corporelle.</p>
+          </div>
+          <div>
+            <p style="font-weight: 700; color: #111; margin-bottom: 4px;">Production &amp; Image</p>
+            <p>Cofondateur de Décine Lario, œil de photographe, expérience internationale des plateaux de tournage.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- BOUTONS D'ACTION FLOTTANTS -->
+  <div class="floating-actions">
+    <a href="../index.html" class="action-btn back-btn">← Retour au portfolio</a>
+    <button type="button" class="action-btn" onclick="window.print()">🖨️ Imprimer / PDF</button>
+  </div>
+
+</body>
+</html>
