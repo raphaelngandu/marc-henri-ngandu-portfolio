@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,17 +18,25 @@
     <div class="header-inner">
       <a href="#top" class="site-title">marc-henri ngandu</a>
       
-      <nav class="header-nav">
-        <a href="#portraits" class="nav-link" data-i18n="nav_portraits">portraits</a>
-        <a href="#filmography" class="nav-link" data-i18n="nav_filmography">filmographie</a>
-        <a href="#showreel" class="nav-link" data-i18n="nav_showreel">showreel</a>
-        <a href="#contact" class="nav-link" data-i18n="nav_contact">contact</a>
+      <div class="header-right">
+        <nav class="header-nav" aria-label="Navigation principale">
+          <a href="#portraits" class="nav-link" data-i18n="nav_portraits">portraits</a>
+          <a href="#filmography" class="nav-link" data-i18n="nav_filmography">filmography</a>
+          <a href="#showreel" class="nav-link" data-i18n="nav_showreel">showreel</a>
+          <a href="#contact" class="nav-link" data-i18n="nav_contact">contact</a>
+        </nav>
         
-        <!-- Sélecteur de langue FR / EN Desktop -->
-        <div class="lang-switcher" aria-label="Choix de la langue">
-          <button type="button" class="lang-btn is-active" id="langFr" aria-label="Passer en Français">FR</button>
-          <span class="lang-sep">/</span>
-          <button type="button" class="lang-btn" id="langEn" aria-label="Switch to English">EN</button>
+        <!-- Sélecteur de langue sous forme de drapeaux (accessible directement Desktop ET Mobile) -->
+        <div class="flag-lang-switcher" aria-label="Language selection / Choix de la langue">
+          <button type="button" class="flag-btn is-active" id="langEn" title="English" aria-label="Switch to English">
+            <span class="flag-emoji" aria-hidden="true">🇬🇧</span>
+            <span class="flag-code">EN</span>
+          </button>
+          <span class="flag-sep">/</span>
+          <button type="button" class="flag-btn" id="langFr" title="Français" aria-label="Passer en Français">
+            <span class="flag-emoji" aria-hidden="true">🇫🇷</span>
+            <span class="flag-code">FR</span>
+          </button>
         </div>
 
         <!-- Bouton Burger Mobile -->
@@ -37,21 +45,21 @@
           <span class="burger-line"></span>
           <span class="burger-line"></span>
         </button>
-      </nav>
+      </div>
     </div>
 
     <!-- Menu Plein Écran Mobile (Fond noir texturé centré) -->
     <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
       <div class="mobile-nav-content">
         <a href="#portraits" class="mobile-nav-link" data-i18n="nav_portraits">portraits</a>
-        <a href="#filmography" class="mobile-nav-link" data-i18n="nav_filmography">filmographie</a>
+        <a href="#filmography" class="mobile-nav-link" data-i18n="nav_filmography">filmography</a>
         <a href="#showreel" class="mobile-nav-link" data-i18n="nav_showreel">showreel</a>
         <a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">contact</a>
 
         <div class="mobile-lang-box" aria-label="Choix de la langue mobile">
-          <button type="button" class="mobile-lang-btn is-active" id="mobileLangFr">FR</button>
+          <button type="button" class="mobile-lang-btn is-active" id="mobileLangEn">🇬🇧 English</button>
           <span style="color: rgba(255, 255, 255, 0.3);">/</span>
-          <button type="button" class="mobile-lang-btn" id="mobileLangEn">EN</button>
+          <button type="button" class="mobile-lang-btn" id="mobileLangFr">🇫🇷 Français</button>
         </div>
       </div>
     </div>
@@ -76,15 +84,15 @@
       <div class="hero-bio-col">
         <div class="hero-header-block">
           <h1 class="hero-main-title">Marc-Henri Ngandu</h1>
-          <div class="hero-subtitle" id="heroSubtitle" data-i18n="hero_roles">Comédien &amp; Producteur</div>
+          <div class="hero-subtitle" id="heroSubtitle" data-i18n="hero_roles">Actor &amp; Producer</div>
         </div>
 
         <div class="hero-bio-text" id="bioTextBlock">
-          <p>Né à Lyon, Marc-Henri Ngandu découvre très tôt le jeu d’acteur. Il fait ses premières armes et affine son jeu au Théâtre de l’Iris à Villeurbanne, développant un attachement profond pour l’incarnation dramatique.</p>
-          <p>À 22 ans, il s’installe à Londres. Avide d’explorer de nouveaux horizons, il parcourt le monde en tant que photographe, un parcours visuel et humain qui aiguise durablement son regard sur l’authenticité et l’émotion humaine.</p>
-          <p>Enrichi par ces expériences et passionné par le cinéma, il porte son travail à l’écran dans <em>La Pierre Percée</em> de Guillaume Plas aux côtés de Nemo Schiffman et Marilyne Canto. Il élargit rapidement son champ d'action sur les plateaux internationaux en rejoignant la saison 2 de la série Paramount+ <em>The Agency</em>.</p>
-          <p>De retour en France, il s'établit à Paris pour perfectionner son travail d'acteur à <a href="https://lafabrikorigin.com/" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">LafabriKorigin</a> sous la direction de Leslie Tompson-Bader.</p>
-          <p>Aujourd'hui à la fois comédien et producteur, il cofonde la société de production Décine Lario avec l’acteur Erik Alens. Alliant une sensibilité visuelle affûtée à un engagement total du jeu d’acteur, Marc-Henri Ngandu défend une vision artistique singulière, devant comme derrière la caméra.</p>
+          <p>Born in Lyon, France, Marc-Henri Ngandu discovered the performing arts at an early age. He took his first steps and refined his craft at the Théâtre de l’Iris in Villeurbanne, developing a deep devotion to dramatic storytelling and performance.</p>
+          <p>At the age of 22, he moved to London. Eager to explore new perspectives, he traveled the world working as a photographer, a visual and human journey that permanently sharpened his eye for authenticity and human emotion.</p>
+          <p>Enriched by these experiences and fueled by a passion for cinema, he brought his craft to the screen in Guillaume Plas’s <em>La Pierre Percée</em>, starring alongside Nemo Schiffman and Marilyne Canto. He quickly expanded his reach to international sets by joining Season 2 of the Paramount+ series <em>The Agency</em>.</p>
+          <p>Upon returning to France, he based himself in Paris to further hone his acting at <a href="https://lafabrikorigin.com/" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">LaFabriKorigin</a> under the mentorship of Leslie Tompson-Bader.</p>
+          <p>Now both an actor and producer, he co-founded the production company Décine Lario with fellow actor Erik Alens. Blending his keen visual sensibility with dedicated screen craft, Marc-Henri Ngandu champions a distinct artistic vision, both in front of and behind the camera.</p>
         </div>
       </div>
 
@@ -206,8 +214,8 @@
     <section class="section-container" id="filmography">
       
       <div class="section-header">
-        <h2 class="section-title" data-i18n="section_filmography">filmographie</h2>
-        <span class="section-subtitle" data-i18n="subtitle_filmography">projets cinéma &amp; séries</span>
+        <h2 class="section-title" data-i18n="section_filmography">filmography</h2>
+        <span class="section-subtitle" data-i18n="subtitle_filmography">film &amp; television projects</span>
       </div>
 
       <div class="filmography-subsections">
@@ -215,7 +223,7 @@
         <!-- 3.A PROJETS SORTIS (RELEASED) -->
         <div class="film-subsection">
           <div class="film-subsection-header">
-            <h3 class="film-subsection-title" data-i18n="group_released">projets sortis</h3>
+            <h3 class="film-subsection-title" data-i18n="group_released">released projects</h3>
             <span class="film-subsection-badge">released</span>
           </div>
 
@@ -227,16 +235,16 @@
                      data-full="assets/images/the-agency.jpg"
                      role="button"
                      tabindex="0"
-                     aria-label="Ouvrir les détails de The Agency">
+                     aria-label="Open The Agency details">
               <div class="project-poster-wrap">
                 <img src="assets/images/the-agency.jpg" alt="The Agency — Paramount+" loading="lazy">
                 <div class="project-card-overlay">
-                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                  <span class="project-overlay-view-btn" data-i18n="view_project">project details ↗</span>
                 </div>
               </div>
               <div class="project-card-info">
                 <h4 class="project-card-title">the agency</h4>
-                <div class="project-card-meta" data-i18n="agency_meta">série tv • paramount+ (2024)</div>
+                <div class="project-card-meta" data-i18n="agency_meta">tv series • paramount+ (2026)</div>
               </div>
             </article>
 
@@ -246,16 +254,16 @@
                      data-full="assets/images/la-pierre-percee.jpg"
                      role="button"
                      tabindex="0"
-                     aria-label="Ouvrir les détails de La Pierre Percée">
+                     aria-label="Open La Pierre Percée details">
               <div class="project-poster-wrap">
                 <img src="assets/images/la-pierre-percee.jpg" alt="La Pierre Percée — Guillaume Plas" loading="lazy">
                 <div class="project-card-overlay">
-                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                  <span class="project-overlay-view-btn" data-i18n="view_project">project details ↗</span>
                 </div>
               </div>
               <div class="project-card-info">
                 <h4 class="project-card-title">la pierre percée</h4>
-                <div class="project-card-meta" data-i18n="pierre_meta">court-métrage • drame (2022)</div>
+                <div class="project-card-meta" data-i18n="pierre_meta">short film • drama (2022)</div>
               </div>
             </article>
 
@@ -265,16 +273,16 @@
                      data-full="assets/images/jacques.jpg"
                      role="button"
                      tabindex="0"
-                     aria-label="Ouvrir les détails de Jacques">
+                     aria-label="Open Jacques details">
               <div class="project-poster-wrap">
                 <img src="assets/images/jacques.jpg" alt="Jacques — Guillaume Plas" loading="lazy">
                 <div class="project-card-overlay">
-                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                  <span class="project-overlay-view-btn" data-i18n="view_project">project details ↗</span>
                 </div>
               </div>
               <div class="project-card-info">
                 <h4 class="project-card-title">jacques</h4>
-                <div class="project-card-meta" data-i18n="jacques_meta">court-métrage • comédie dramatique (2024)</div>
+                <div class="project-card-meta" data-i18n="jacques_meta">short film • dramatic comedy (2024)</div>
               </div>
             </article>
 
@@ -284,7 +292,7 @@
         <!-- 3.B PROJETS EN PRODUCTION (IN PRODUCTION / À VENIR) -->
         <div class="film-subsection">
           <div class="film-subsection-header">
-            <h3 class="film-subsection-title" data-i18n="group_in_prod">en production / à venir</h3>
+            <h3 class="film-subsection-title" data-i18n="group_in_prod">in production / upcoming</h3>
             <span class="film-subsection-badge badge-in-prod">in production</span>
           </div>
 
@@ -296,16 +304,16 @@
                      data-full="assets/images/tape.jpg"
                      role="button"
                      tabindex="0"
-                     aria-label="Ouvrir les détails de Tape">
+                     aria-label="Open Tape details">
               <div class="project-poster-wrap">
                 <img src="assets/images/tape.jpg" alt="Tape — Oskar Nilsson" loading="lazy">
                 <div class="project-card-overlay">
-                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                  <span class="project-overlay-view-btn" data-i18n="view_project">project details ↗</span>
                 </div>
               </div>
               <div class="project-card-info">
                 <h4 class="project-card-title">tape</h4>
-                <div class="project-card-meta" data-i18n="tape_meta">court-métrage • drame (2025)</div>
+                <div class="project-card-meta" data-i18n="tape_meta">short film • drama (2026)</div>
               </div>
             </article>
 
@@ -315,16 +323,16 @@
                      data-full="assets/images/affiche-esprit-de-escalier.jpg"
                      role="button"
                      tabindex="0"
-                     aria-label="Ouvrir les détails de L'esprit de l'escalier">
+                     aria-label="Open L'esprit de l'escalier details">
               <div class="project-poster-wrap">
                 <img src="assets/images/affiche-esprit-de-escalier.jpg" alt="L'esprit de l'escalier — Ulysse Josselin" loading="lazy">
                 <div class="project-card-overlay">
-                  <span class="project-overlay-view-btn" data-i18n="view_project">détails du projet ↗</span>
+                  <span class="project-overlay-view-btn" data-i18n="view_project">project details ↗</span>
                 </div>
               </div>
               <div class="project-card-info">
                 <h4 class="project-card-title">l'esprit de l'escalier</h4>
-                <div class="project-card-meta" data-i18n="esprit_meta">court-métrage • drame (en production)</div>
+                <div class="project-card-meta" data-i18n="esprit_meta">short film • drama (2026)</div>
               </div>
             </article>
 
@@ -341,21 +349,21 @@
     <section class="section-container" id="showreel">
       
       <div class="section-header">
-        <h2 class="section-title" data-i18n="section_showreel">showreel / bande démo</h2>
+        <h2 class="section-title" data-i18n="section_showreel">showreel / demo reel</h2>
       </div>
 
       <div class="showreel-container">
         <div class="showreel-frame">
           <iframe 
             src="https://www.youtube-nocookie.com/embed/iYLkJ9MBk0Y?controls=1&modestbranding=1&rel=0" 
-            title="Marc-Henri Ngandu — Showreel / Bande Démo" 
+            title="Marc-Henri Ngandu — Official Demo Reel" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
           </iframe>
         </div>
         <div class="showreel-caption">
-          <span data-i18n="showreel_sub">bande démo officielle — marc-henri ngandu</span>
-          <a href="https://www.youtube.com/watch?v=iYLkJ9MBk0Y" target="_blank" rel="noopener" data-i18n="view_youtube">voir sur youtube ↗</a>
+          <span data-i18n="showreel_sub">official demo reel — marc-henri ngandu</span>
+          <a href="https://www.youtube.com/watch?v=iYLkJ9MBk0Y" target="_blank" rel="noopener" data-i18n="view_youtube">watch on youtube ↗</a>
         </div>
       </div>
 
@@ -376,7 +384,7 @@
       <div class="footer-social-links">
         <a href="https://www.imdb.com/fr/name/nm13514283/" target="_blank" rel="noopener" class="footer-social-link">imdb ↗</a>
         <a href="https://www.instagram.com/marckenrii" target="_blank" rel="noopener" class="footer-social-link">instagram ↗</a>
-        <a href="assets/cv-marc-henri-ngandu-fr.pdf" target="_blank" rel="noopener" class="footer-social-link" id="footerCvLink" data-i18n="footer_cv">cv ↗</a>
+        <a href="assets/resume-marc-henri-ngandu-en.pdf" target="_blank" rel="noopener" class="footer-social-link" id="footerCvLink" data-i18n="footer_cv">resume ↗</a>
         <a href="https://decinelario.com" target="_blank" rel="noopener" class="footer-social-link">décine lario ↗</a>
       </div>
 
@@ -521,17 +529,17 @@
           label_cast: "distribution",
           label_status: "statut / sortie",
           label_synopsis: "synopsis & note",
-          agency_meta: "série tv • paramount+ (2024)",
+          agency_meta: "série tv • paramount+ (2026)",
           pierre_meta: "court-métrage • drame (2022)",
           jacques_meta: "court-métrage • comédie dramatique (2024)",
-          tape_meta: "court-métrage • drame (2025)",
-          esprit_meta: "court-métrage • drame (en production)",
+          tape_meta: "court-métrage • drame (2026)",
+          esprit_meta: "court-métrage • drame (2026)",
           bio_paragraphs: [
-            "Né à Lyon, Marc-Henri Ngandu découvre très tôt le jeu d’acteur. Il fait ses premières armes et affine son jeu au Théâtre de l’Iris à Villeurbanne, développant un attachement profond pour l’incarnation dramatique.",
-            "À 22 ans, il s’installe à Londres. Avide d’explorer de nouveaux horizons, il parcourt le monde en tant que photographe, un parcours visuel et humain qui aiguise durablement son regard sur l’authenticité et l’émotion humaine.",
-            "Enrichi par ces expériences et passionné par le cinéma, il porte son travail à l’écran dans <em>La Pierre Percée</em> de Guillaume Plas aux côtés de Nemo Schiffman et Marilyne Canto. Il élargit rapidement son champ d'action sur les plateaux internationaux en rejoignant la saison 2 de la série Paramount+ <em>The Agency</em>.",
-            "De retour en France, il s'établit à Paris pour perfectionner son travail d'acteur à <a href='https://lafabrikorigin.com/' target='_blank' rel='noopener' style='text-decoration: underline; text-underline-offset: 3px;'>LafabriKorigin</a> sous la direction de Leslie Tompson-Bader.",
-            "Aujourd'hui à la fois comédien et producteur, il cofonde la société de production Décine Lario avec l’acteur Erik Alens. Alliant une sensibilité visuelle affûtée à un engagement total du jeu d’acteur, Marc-Henri Ngandu défend une vision artistique singulière, devant comme derrière la caméra."
+            "Né à Lyon, Marc-Henri Ngandu découvre très tôt le jeu d'acteur. Il fait ses premières armes et affine son jeu au Théâtre de l'Iris à Villeurbanne, développant un attachement profond pour l'incarnation dramatique.",
+            "À 22 ans, il s'installe à Londres. Avide d'explorer de nouveaux horizons, il parcourt le monde en tant que photographe, une expérience visuelle et humaine qui affine durablement son regard sur l'authenticité et l'émotion humaine.",
+            "Enrichi par ces expériences et passionné par le cinéma, il porte son travail à l'écran dans <em>La Pierre Percée</em> de Guillaume Plas, aux côtés de Nemo Schiffman et Marilyne Canto. Il s'ouvre rapidement aux plateaux internationaux en rejoignant la saison 2 de la série Paramount+ <em>The Agency</em>.",
+            "De retour en France, il s'établit à Paris pour perfectionner son travail d'acteur à <a href='https://lafabrikorigin.com/' target='_blank' rel='noopener' style='text-decoration: underline; text-underline-offset: 3px;'>LaFabriKorigin</a>, sous la direction de Leslie Tompson-Bader.",
+            "Aujourd'hui à la fois comédien et producteur, il cofonde la société de production Décine Lario avec l'acteur Erik Alens. Alliant une sensibilité visuelle affûtée à un engagement total dans le jeu d'acteur, Marc-Henri Ngandu défend une vision artistique singulière, devant comme derrière la caméra."
           ]
         },
         en: {
@@ -560,16 +568,16 @@
           label_cast: "cast",
           label_status: "status / release",
           label_synopsis: "synopsis & director's note",
-          agency_meta: "tv series • paramount+ (2024)",
+          agency_meta: "tv series • paramount+ (2026)",
           pierre_meta: "short film • drama (2022)",
           jacques_meta: "short film • dramatic comedy (2024)",
-          tape_meta: "short film • drama (2025)",
-          esprit_meta: "short film • drama (in production)",
+          tape_meta: "short film • drama (2026)",
+          esprit_meta: "short film • drama (2026)",
           bio_paragraphs: [
             "Born in Lyon, France, Marc-Henri Ngandu discovered the performing arts at an early age. He took his first steps and refined his craft at the Théâtre de l’Iris in Villeurbanne, developing a deep devotion to dramatic storytelling and performance.",
             "At the age of 22, he moved to London. Eager to explore new perspectives, he traveled the world working as a photographer, a visual and human journey that permanently sharpened his eye for authenticity and human emotion.",
             "Enriched by these experiences and fueled by a passion for cinema, he brought his craft to the screen in Guillaume Plas’s <em>La Pierre Percée</em>, starring alongside Nemo Schiffman and Marilyne Canto. He quickly expanded his reach to international sets by joining Season 2 of the Paramount+ series <em>The Agency</em>.",
-            "Upon returning to France, he based himself in Paris to further hone his acting at <a href='https://lafabrikorigin.com/' target='_blank' rel='noopener' style='text-decoration: underline; text-underline-offset: 3px;'>LafabriKorigin</a> under the mentorship of Leslie Tompson-Bader.",
+            "Upon returning to France, he based himself in Paris to further hone his acting at <a href='https://lafabrikorigin.com/' target='_blank' rel='noopener' style='text-decoration: underline; text-underline-offset: 3px;'>LaFabriKorigin</a> under the mentorship of Leslie Tompson-Bader.",
             "Now both an actor and producer, he co-founded the production company Décine Lario with fellow actor Erik Alens. Blending his keen visual sensibility with dedicated screen craft, Marc-Henri Ngandu champions a distinct artistic vision, both in front of and behind the camera."
           ]
         }
@@ -583,9 +591,9 @@
             role: "AU Soldier (2 épisodes)",
             format: "Série TV (Saison 2) • Drame, Thriller, Espionnage",
             director: "Paramount+ / Showtime • George Clooney & Grant Heslov",
-            cast: "Michael Fassbender, Richard Gere, Jeffrey Wright, Jodie Turner-Smith, Marc-Henri Ngandu",
-            status: "Sorti en 2024",
-            badge: "Released",
+            cast: "Michael Fassbender, Jeffrey Wright, Jodie Turner-Smith, Richard Gere, Katherine Waterston, Harriet Sansom Harris, John Magaro, Saura Lightfoot-Leon, India Fowler",
+            status: "Sortie en 2026",
+            badge: "2026",
             synopsis: "Suivez un monde d'intrigues et de subterfuges encore plus profonds, avec des personnages qui mènent leurs propres batailles tout en luttant contre des menaces existentielles pour la nation et le monde."
           },
           en: {
@@ -593,29 +601,29 @@
             role: "AU Soldier (2 episodes)",
             format: "TV Series (Season 2) • Drama, Thriller, Espionage",
             director: "Paramount+ / Showtime • George Clooney & Grant Heslov",
-            cast: "Michael Fassbender, Richard Gere, Jeffrey Wright, Jodie Turner-Smith, Marc-Henri Ngandu",
-            status: "Released in 2024",
-            badge: "Released",
+            cast: "Michael Fassbender, Jeffrey Wright, Jodie Turner-Smith, Richard Gere, Katherine Waterston, Harriet Sansom Harris, John Magaro, Saura Lightfoot-Leon, India Fowler",
+            status: "Release in 2026",
+            badge: "2026",
             synopsis: "Follow a deeper world of intrigue and subterfuge, where characters fight their own battles while confronting existential threats to the nation and the world."
           }
         },
         "la-pierre-percee": {
           fr: {
             title: "La Pierre Percée",
-            role: "Joseph (rôle principal)",
+            role: "Joseph (second rôle)",
             format: "Court-métrage (24 min) • Drame",
             director: "Réal. Guillaume Plas • Sourire Productions",
-            cast: "Nemo Schiffman, Marilyne Canto, Marc-Henri Ngandu",
+            cast: "Nemo Schiffman, Marilyne Canto, Marc-Henri Ngandu, Léa Rostain, Camille Moutawakil, Dylan Raffin, Igor Kovalsky",
             status: "Sorti en 2022",
             badge: "Released",
             synopsis: "Après une année passée à Paris, Slim, ayant raté ses concours, se voit forcé de rentrer dans son petit village en Isère. Il y retrouve Joseph, son meilleur ami, qui a mal vécu le départ de ce dernier. Les retrouvailles sont difficiles. Sous la chaleur de l’été, entre les non-dits et les rêves déçus, la tension monte."
           },
           en: {
             title: "La Pierre Percée",
-            role: "Joseph (Lead Role)",
+            role: "Joseph (Supporting Role)",
             format: "Short Film (24 min) • Drama",
             director: "Dir. Guillaume Plas • Sourire Productions",
-            cast: "Nemo Schiffman, Marilyne Canto, Marc-Henri Ngandu",
+            cast: "Nemo Schiffman, Marilyne Canto, Marc-Henri Ngandu, Léa Rostain, Camille Moutawakil, Dylan Raffin, Igor Kovalsky",
             status: "Released in 2022",
             badge: "Released",
             synopsis: "After a year in Paris and failing his entrance exams, Slim is forced to return to his small village in Isère. There he reunites with Joseph, his best friend, who took his departure poorly. Reunions prove difficult. In the summer heat, unspoken grievances and broken ambitions make tensions mount."
@@ -650,8 +658,8 @@
             format: "Court-métrage • Drame",
             director: "Réal. Oskar Nilsson • Path 22 & ill Advised / Décine Lario",
             cast: "Marc-Henri Ngandu, Steve Tagheu, Ilyana Djamila Nzokou",
-            status: "En production (2025)",
-            badge: "In Production",
+            status: "Sortie en 2026",
+            badge: "2026",
             synopsis: "Un père célibataire qui se prépare à défendre son titre de champion du monde de kick-boxing va tout risquer pour une audition qui pourrait changer sa vie."
           },
           en: {
@@ -660,8 +668,8 @@
             format: "Short Film • Drama",
             director: "Dir. Oskar Nilsson • Path 22 & ill Advised / Décine Lario",
             cast: "Marc-Henri Ngandu, Steve Tagheu, Ilyana Djamila Nzokou",
-            status: "In Production (2025)",
-            badge: "In Production",
+            status: "Release in 2026",
+            badge: "2026",
             synopsis: "A single father preparing to defend his world kick-boxing champion title risks everything for a life-altering casting audition."
           }
         },
@@ -672,8 +680,8 @@
             format: "Court-métrage • Drame",
             director: "Réal. Ulysse Josselin",
             cast: "Marc-Henri Ngandu, Margaux Lenot, Galice Cassagnes, Alix Gavoille",
-            status: "En production",
-            badge: "In Production",
+            status: "2026",
+            badge: "2026",
             synopsis: "Le temps d'une nuit, dans un vaste appartement parisien, une bande de potes issus d'un milieu privilégié se retrouve pour une soirée où tout semble permis : ironie, provocations, faux débats politiques et règlements de comptes."
           },
           en: {
@@ -682,14 +690,14 @@
             format: "Short Film • Drama",
             director: "Dir. Ulysse Josselin",
             cast: "Marc-Henri Ngandu, Margaux Lenot, Galice Cassagnes, Alix Gavoille",
-            status: "In Production",
-            badge: "In Production",
+            status: "2026",
+            badge: "2026",
             synopsis: "Over the course of a night in a sprawling Parisian apartment, a circle of friends from privileged backgrounds gather for an evening where everything seems permitted: irony, provocations, mock political debates, and settling scores."
           }
         }
       };
 
-      let currentLang = "fr";
+      let currentLang = "en";
 
       function populateDrawer(projId) {
         const dataGroup = PROJECTS_DATA[projId];
@@ -760,8 +768,8 @@
       if (langFrBtn) langFrBtn.addEventListener("click", () => setLanguage("fr"));
       if (langEnBtn) langEnBtn.addEventListener("click", () => setLanguage("en"));
 
-      // Initialiser la langue par défaut (FR)
-      setLanguage("fr");
+      // Initialiser la langue par défaut (EN)
+      setLanguage("en");
 
 
       // ----------------------------------------------------
